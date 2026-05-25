@@ -72,17 +72,46 @@ Known Issues:
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(0,0%,100%);
+/* Code below changes the background color for content with the "page" class. This means the color of the very first page on the website will not be affected. */
+    background-color: hsl(93,71.4%,83.5%);
 }
 
   .page:target {
     left: 0vw;
     z-index: 1;
 }
+/* Code below ensures that the footer is formatted correctly and is not shifted. Note that the code below is placed between the style tags. */
+footer {
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/* Code below changes the font for the header 1 element to be in "Times New Roman"*/
+.w3-container h1 {
+    font-family: 'Times New Roman', serif;
+}
+
+/* Code below changes the font for the paragraph element to be in "Courier New"*/
+.w3-container p {
+    font-family: 'Courier New', serif;
+}
+
+/* Code below adjusts the size and margins of images */
+img, object{
+	max-height: 30%;
+	max-width: 30%;
+	display: block;
+	margin: 10px; /* more info on margins can be found on this website: https://www.w3schools.com/cssref/pr_margin.php */
+}
+
 </style>
 
-<body>
-<div id="header" class="w3-container w3-flat-carrot">
+<body style="background-color: hsl(325, 46%, 79%);">
+<!-- Code above causes the body color to be pink-->
+<!-- Code below causes the header to be turquoise on the very first page-->
+<div id="header" class="w3-container w3-flat-turquoise">
 	<h1>Cold or Allergies!?</h1>
 </div>
 	
@@ -106,6 +135,8 @@ Known Issues:
 	    	<a href="#two" onclick="allergyAdd()" class="w3-btn w3-grey w3-round"> Yes </a>
 			<a href="#two" onclick="coldAdd()" class="w3-btn w3-grey w3-round"> No </a>
     	</div>
+<!-- Code below inserts a cow image on the "Question 1" page -->
+		<img src="images/happy-cow.png" alt="Happy Cow">
 </div>
 
 <div class="page" id="two">
