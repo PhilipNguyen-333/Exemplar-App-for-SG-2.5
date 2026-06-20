@@ -1,2 +1,2 @@
-# Cold-or-Allergy
-This next app will have you create a survey that can predict the likelihood that someone has a cold or an allergy! (Disclaimer: this survey is not an official diagnostic test and should not be used to actually diagnose anyone!)
+# Exemplar-App-for-SG#2.5
+This is the exemplar app (answer key) for Student Guide #2.5 (CSS Styling), which is an extension of the Cold-or-Allergy app. Only teachers should have access to this exemplar app.
